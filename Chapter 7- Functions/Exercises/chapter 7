@@ -1,0 +1,52 @@
+#exercise 1
+
+def display_message():
+    """Display a message about what I'm studying."""
+    msg = "I'm studying about the history of the Philippines."
+    print(msg)
+
+display_message()
+
+
+#exercise 2
+
+def favorite_book(title):
+    """Display a message about my favorite book."""
+    print(title + " is one of my favorite books.")
+
+favorite_book("It ends with us by Collen Hoover")
+
+
+#exercise 3
+
+def make_shirt(size, message):
+    """Summarizing the shirt"""
+    print("\nI will make a " + size + " tshirt.")
+    print('It will be printed as, "' + message + '"')
+
+make_shirt('small', 'Life can be hard but never give up!!')
+make_shirt(message="Everything is gonna be alright.", size='large')
+
+
+#exercise 4
+
+def make_shirt(size='medium', message='I love Python'):
+    """Summarizing the shirt"""
+    print("\nI will make a " + size + " tshirt.")
+    print('It will be printed as, "' + message + '"')
+
+make_shirt()
+make_shirt(size='large')
+make_shirt('extra large', 'I dont like coding.')
+
+
+#exercise 5
+
+def describe_city(city, country="Philippines"):
+    """city in a country"""
+    msg = city + " is in " + country + "."
+    print(msg)
+
+describe_city("Manila")
+describe_city("Karachi", "Pakistan")
+describe_city("Seoul", "South Korean")

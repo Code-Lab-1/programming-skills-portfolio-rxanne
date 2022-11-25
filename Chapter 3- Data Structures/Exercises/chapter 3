@@ -1,0 +1,207 @@
+#exercise 1
+
+friends = ["Micah", "Hessa", "Fatima", "Reyna"]
+
+print(friends[0])
+print(friends[1])
+print(friends[2])
+print(friends[3])
+
+#exercise 2
+
+friends = ["Micah", "Hessa", "Fatima", "Reyna"]
+
+msg = "How are you, " + friends[0] + "?"
+print(msg)
+
+msg = "How are you, " + friends[1] + "?"
+print(msg)
+
+msg = "How are you, " + friends[2] + "?"
+print(msg)
+
+msg = "How are you, " + friends[3] + "?"
+print(msg)
+
+
+#exercise 3
+
+favourite = ["Nissan Nismo r35", "Jeep Sahara", "Dodge Challenger", "Toyota Camry"]
+
+cars = favourite[0]
+print("I would like to own a " + cars + ".")
+
+cars = favourite[1]
+print("I would like to own a " + cars + ".")
+
+cars = favourite[2]
+print("I would like to own a " + cars + ".")
+
+cars = favourite[3]
+print("I would like to own a " + cars + ".")
+
+
+#exercise 4
+
+guests = ["Micah", "Hessa", "Fatima"]
+
+people = guests[0]
+print(people + ", would you like to have dinner at my place?")
+
+people = guests[1]
+print(people + ", would you like to have dinner at my place?")
+
+people = guests[2]
+print(people + ", would you like to have dinner at my place?")
+
+
+#exercise 5
+
+# inviting few people to dinner
+guests = ["Micah", "Fatima", "Hessa"]
+
+friends = guests[0]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[1]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[2]
+print(friends ,  ", would you like to have dinner at my place?")
+
+friends = guests[1]
+print("\nSorry, " , friends , " can't come to my place for dinner.")
+
+# Fatima can't come, let's invite Reyna.
+del(guests[1])
+guests.insert(1, "Reyna")
+
+# new invitations
+friends = guests[0]
+print("\n", friends , ", would you like to have dinner at my place?")
+
+friends = guests[1]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[2]
+print(friends , ", would you like to have dinner at my place?")
+
+
+#exercise 6
+
+# inviting few people to dinner
+guests = ["Micah", "Fatima", "Hessa"]
+
+friends = guests[0]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[1]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[2]
+print(friends ,  ", would you like to have dinner at my place?")
+
+friends = guests[1]
+print("\nSorry, " , friends , " can't come to my place for dinner.")
+
+# Fatima can't come, let's invite Reyna.
+del(guests[1])
+guests.insert(1, "Reyna")
+
+# new invitations
+friends = guests[0]
+print("\n", friends , ", would you like to have dinner at my place?")
+
+friends = guests[1]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[2]
+print(friends , ", would you like to have dinner at my place?")
+
+# we took a bigger table so we are adding more people in the list
+print("\nWe took a bigger table")
+guests.insert(0, "Tracey")
+guests.insert(2, "Sarah")
+guests.append("Reem")
+
+friends = guests[0]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[1]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[2]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[3]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[4]
+print(friends , ", would you like to have dinner at my place?")
+
+friends = guests[5]
+print(friends , ", would you like to have dinner at my place?")
+
+# the table won't come in time for the dinner
+print("\nSince the table won't arrive in time we can only invite two people.")
+
+friends = guests.pop()
+print("I'm sorry, " , friends , " the table won't arrive in time so there isn't any seats left.")
+
+friends = guests.pop()
+print("I'm sorry, " , friends , " the table won't arrive in time so there isn't any seats left.")
+
+friends = guests.pop()
+print("I'm sorry, " , friends , " the table won't arrive in time so there isn't any seats left.")
+
+friends = guests.pop()
+print("I'm sorry, " , friends , " the table won't arrive in time so there isn't any seats left.")
+
+# invite only two people
+name = guests[0]
+print(friends , ", would you like to have dinner at my place?")
+
+name = guests[1]
+print(friends , ", would you like to have dinner at my place?")
+
+# remove guests in the list
+del(guests[0])
+del(guests[0])
+
+
+print(guests)
+
+#exercise 7
+
+places=["Eiffel Tower","Pyramids of Giza","Amazon RainForest","Niagara Falls"]
+
+print("In order")
+print(places)
+
+print("\nAlphabetical")
+print(sorted(places))
+
+print("\nIn order")
+print(places)
+
+print("\nReverse alphabetically")
+print(sorted(places, reverse=True))
+
+print("\nIn order")
+print(places)
+
+print("\nReversed")
+places.reverse()
+print(places)
+
+print("\nIn order")
+places.reverse()
+print(places)
+
+print("\nAlphabetical")
+places.sort()
+print(places)
+
+print("\nReverse alphabetically")
+places.sort(reverse=True)
+print(places)
