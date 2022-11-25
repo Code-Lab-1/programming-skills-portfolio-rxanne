@@ -1,0 +1,115 @@
+#exercise 1
+
+friend = {"first_name": "Micah", "last_name": "Sereno", "age": 17, "city": "Cavite", }
+print(friend["first_name"])
+print(friend["last_name"])
+print(friend["age"])
+print(friend["city"])
+
+
+#exercise 2
+
+glossary = {
+    "int": "integer of unlimited magnitude",
+    "set": "Unordered set contains no duplicates can contain mixed types if hashable",
+    "float": "a data type composed of a number that is not an integer.",
+    "list": "created by placing elements inside square brackets or separated by commas.",
+    "variable": "a symbolic name that is a reference or pointer to an object.",
+    }
+
+word = "int"
+print("\n" , word , ": " , glossary[word])
+
+word = "set"
+print("\n" , word , ": " , glossary[word])
+
+word = "float"
+print("\n" , word , ": " , glossary[word])
+
+word = "list"
+print("\n" , word , ": " , glossary[word])
+
+word = "variable"
+print("\n" , word , ": " , glossary[word])
+
+
+#exercise 3
+
+glossary = {
+    "program": "a set of instructions that a computer uses to perform a specific action.",
+    "variable": "a crucial term in every programming language, not just Python.",
+    "list": "a data type that can store a collection of values.",
+    "dictionary": "a data type that stores an unordered collection of data values.",
+    "functions": "a reusable block of code that performs a certain action.",
+    "input": "another built-in Python function.",
+    "if statements": "one of the most common control structures in Python and many other programming languages.",
+    "loops": "allow us to iterate over sequences like lists, dictionaries, sets, tuples, etc.",
+    "float": "a method that returns a floating-point number for a provided number or string",
+    "strings": " a collection of alphabets, words or other characters",
+    }
+
+for word, definition in glossary.items():
+    print("\n" , word , ": " , definition)
+
+
+
+#exercise 4
+
+rivers = {
+    "Amazon": "South America",
+    "Congo": "Africa",
+    "Yellow": "China",
+    "Yenisei": "Russia",
+    "Yukon": "North America",
+    }
+
+for river, country in rivers.items():
+    print("The " , river , " runs through " , country , ".")
+
+print("\nrivers:")
+for river in rivers.keys():
+    print("- " , river)
+
+print("\ncountries:")
+for country in rivers.values():
+    print("- " , country)
+
+
+#exercise 5
+
+my_pets = []
+
+pet = {  
+    "animal": "crocodile",
+    "name": "jordan",
+    "owner": "george",
+    "weight": "1300kg",
+    "eats": "birds",
+    }
+
+my_pets.append(pet)
+
+pet = {
+    "animal": "parrot",
+    "name": "jake",
+    "owner": "william",
+    "weight": "1.6kg",
+    "eats": "seeds",
+    }
+
+my_pets.append(pet)
+
+pet = {
+    "animal": "rat",
+    "name": "sansan",
+    "owner": "roxi",
+    "weight": "500g",
+    "eats": "fruits",
+    }
+
+my_pets.append(pet)
+
+for pet in my_pets:
+    print("\nAbout ",pet['name'], "=")
+    for a,b in pet.items():
+        print("\n",a, ": ",b, )
